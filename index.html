@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css" type="text/css">
+    <script type="module" src="main.js" defer></script>
 </head>
 <body>
 
@@ -13,18 +14,18 @@
         
         <nav aria-label="pagination">
 
-            <a href="./index.html"><h1>LOGO</h1></a>
+            <a href="../index.html" id="logo"></a>
 
             <form id="s-bar" action="" method="get">
                 <label for="search-bar">Trouver: </label>
                 <input type="search" name="search-bar" id="search-bar" aria-placeholder="Entrez votre recherche" placeholder="Entrez votre recherche">
-                <input type="submit" id="searchBtn" value="">
+                <input type="submit" id="searchBtn" value=" ">
             </form>
 
             <ul id="top-nav" role="presentation">
                 <a href="./Subjects/francais.html"><li>Français</li></a>
                 <a href="./Subjects/maths.html"><li>mathématiques</li></a>
-                <a href="./Subjects/hist&geo.html"><li id="histoire"></li></a>
+                <a href="./Subjects/hist&geo.html"><li>Histoire Géographie EMC</li></a>
                 <a href="./Subjects/anglais.html"><li>Anglais</li></a>
                 <a href="./Subjects/technologie.html"><li>Technologie</li></a>
             </ul>
@@ -42,13 +43,12 @@
     </header>
 
 
-    <main><p><a href="#">Test pour le corps de page</a> afin de visualiser <span>d'eventuels changements</span> de comportement.</p></main>
+    <main>
+        <quote></quote>
+    </main>
 
 
     <footer></footer>
-
-
-    <script src="./main.js"></script>
 
 </body>
 </html>
