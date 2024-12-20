@@ -118,51 +118,6 @@ ul {
     display: none;
 }
 
-#francais {
-    background-image: url("./assets/français.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 40px;
-    width: 40px;
-}
-
-#mathematiques {
-    background-image: url("./assets/maths.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 40px;
-    width: 40px;
-}
-
-#histoire {
-    background-image: url("./assets/histoire.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 40px;
-    width: 40px;
-}
-
-#anglais {
-    background-image: url("./assets/langues.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 40px;
-    width: 40px;
-}
-
-#technologie {
-    background-image: url("./assets/technologie.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 40px;
-    width: 40px;
-}
-
 @media only screen and (max-width: 1190px) {
     #s-bar label {
         display: none;
@@ -185,13 +140,8 @@ ul {
         z-index: 2;
     }
 
-    #s-bar,
-    #top-nav {
+    #s-bar {
         display: none;
-    }
-
-    #side-nav {
-        display: inherit;
     }
 
     nav,
@@ -201,20 +151,69 @@ ul {
 
     nav {
         align-items: start;
-        height: 90%;
+        height: 100%;
     }
 
     ul {
+        display: flex;
+        justify-content: space-evenly;
         width: 100%;
-        margin-top: 100%;
         align-content: start;
     }
 
+    nav a {
+        font-size: 0;
+    }
     #logo {
         width: 80px;
         aspect-ratio: 1;
         width: 100%;
         height: 18%;
         background-size: contain;
+    }
+
+    #francais {
+        background-image: url("./assets/français.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 40px;
+        width: 40px;
+    }
+    
+    #mathematiques {
+        background-image: url("./assets/maths.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 40px;
+        width: 40px;
+    }
+    
+    #histoire {
+        background-image: url("./assets/histoire.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 40px;
+        width: 40px;
+    }
+    
+    #anglais {
+        background-image: url("./assets/langues.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 40px;
+        width: 40px;
+    }
+    
+    #technologie {
+        background-image: url("./assets/technologie.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 40px;
+        width: 40px;
     }
 }
