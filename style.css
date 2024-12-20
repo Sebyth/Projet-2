@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    height: 100%;
+    margin: 0 1rem;
+}
+
+header {
+    position: fixed;
+    background-color: aqua;
+    height: 80px;
+    width: 100%;
+    box-shadow: 0px 5px 10px aqua;
+    z-index: 2;
+}
+
+input {
+    all: unset;
+}
+
+main {
+    position: absolute;
+    top: 80px;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 90%;
+    margin: 0 auto ;
+}
+
+nav :first-child {
+    margin-right: auto;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: aquamarine;
+    box-shadow: 0px 5px 10px brown;
+    border-radius: 0 0 0.4rem 0.4rem;
+}
+
+li {
+    display: inline;
+    padding: 0 1rem;
+    text-align: center;
+    list-style-type: none;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    column-gap: 1rem;
+}
+
+#s-bar {
+    position: relative;
+    display:flex;
+    height: 100%;
+    width: min-content;
+    place-content: center;
+    place-items: center;
+    margin: 0 auto;
+}
+
+#search-bar {
+    height: 30px;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+    background-color: white;
+    box-shadow: 2px 2px 2px black;
+    border-radius: .5rem;
+}
+
+#searchBtn {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    right: 16px;
+    background-color: white;
+    background-image: url(./assets/search.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-left: none;
+    border-radius: .5rem;
+}
+
+#searchBtn:hover {
+    cursor: pointer;
+}
+
+#side-nav {
+    display: none;
+}
+
+#francais {
+    background-image: url("./assets/français.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+}
+
+#mathematiques {
+    background-image: url("./assets/maths.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+}
+
+#histoire {
+    background-image: url("./assets/histoire.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+}
+
+#anglais {
+    background-image: url("./assets/langues.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+}
+
+#technologie {
+    background-image: url("./assets/technologie.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+}
+
+@media only screen and (max-width: 1190px) {
+    #s-bar label {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1190px) {
+    #s-bar {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 842px) {
+    header {
+        position: static;
+        background-color: aqua;
+        height: 100vh;
+        width: 20%;
+        box-shadow: 0px 5px 10px aqua;
+        z-index: 2;
+    }
+
+    #s-bar,
+    #top-nav {
+        display: none;
+    }
+
+    #side-nav {
+        display: inherit;
+    }
+
+    nav,
+    ul {
+        flex-direction: column;
+    }
+
+    nav {
+        height: 90%;
+    }
+
+    nav :first-child {
+        margin-bottom: auto;
+    }
+}
