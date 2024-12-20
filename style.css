@@ -11,6 +11,16 @@ a:hover {
     color: black;
 }
 
+#citation {
+    margin: 1rem;
+    padding: 1rem;
+    border-style: double;
+    border-width: 4px;
+    border-color: coral;
+    border-radius: .4rem;
+    box-shadow: 5px 5px 5px chocolate;
+}
+
 #logo {
     background-image: url(./assets/devoirs.png);
     background-position: center;
@@ -131,6 +141,11 @@ ul {
 }
 
 @media only screen and (max-width: 842px) {
+
+    a:hover {
+        all: unset;
+    }
+
     header {
         position: static;
         background-color: aqua;
@@ -140,8 +155,18 @@ ul {
         z-index: 2;
     }
 
+    main {
+        top: 0;
+    }
+
     #s-bar {
         display: none;
+    }
+
+    #citation {
+        width: 80%;
+        float: right;
+        margin: 0;
     }
 
     nav,
