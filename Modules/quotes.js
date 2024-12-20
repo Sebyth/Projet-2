@@ -26,14 +26,15 @@ const quotes =[
     {quote: "La vie est un défi, vivez-là, sentez-là, aimez-là, riez, pleurez, jouez, gagnez, perdez, trébuchez, mais relevez-vous toujours et avancez !", author: "Sandrine Fillassier"},
     {quote: "Il arrive souvent de ne rien obtenir parce que l'on ne tente rien.", author: "Jacques Deval"},
     {quote: "On regrette rarement d'avoir osé, mais toujours de ne pas avoir essayer.", author: "Serge Lafrance"},
+    {quote: "Tu dois devenir l'homme que tu es. Fais ce que toi seul peux faire.", author: "Friedrich Nietzsche"},
+    {quote: "L'intelligence n'est pas la capacité de stocker des informations, mais de savoir où les trouver.", author: "Albert Einstein"},
     ];
 
-let random = Math.floor(Math.random()*27);
-//const dailyQuote = quote.slice(--random, ++random).toString();
+let random = Math.floor(Math.random()*29);
+
 const dailyQuoteArray = quotes[random];
 
 const dailyQuote =  dailyQuoteArray.quote;
-  
 const dailyAuthor = dailyQuoteArray.author;
 
     export {dailyQuote, dailyAuthor};
